@@ -16,18 +16,8 @@
 
     <properties>
         <java.version>11</java.version>
-        <jacoco.version>0.7.5.201505241946</jacoco.version>
-        <junit.version>4.12</junit.version>     
     </properties>
 
-     <dependencies>
-       <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -53,9 +43,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.jacoco</groupId>
+                     <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.version}</version>
                 <executions>
@@ -92,6 +80,7 @@
                         <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
                     </systemPropertyVariables>
                 </configuration>
+            </plugin>
         </plugins>
     </build>
 
