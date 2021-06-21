@@ -18,3 +18,12 @@ jobs:
             HEROKU_API_KEY=${HEROKU_API_KEY} heroku container:login
             HEROKU_API_KEY=${HEROKU_API_KEY} heroku container:push -a xtaas-ci-cd web
             HEROKU_API_KEY=${HEROKU_API_KEY} heroku container:release -a xtaas-ci-cd web
+            
+workflows:
+  version: 2.1
+  workflow:
+    jobs:
+    - build-deploy
+          requires:
+            - hold
+      
