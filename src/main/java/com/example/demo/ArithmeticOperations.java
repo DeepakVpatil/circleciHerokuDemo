@@ -1,4 +1,4 @@
-package math.operation;
+package com.example.demo;
 
 public class ArithmeticOperations {
 
