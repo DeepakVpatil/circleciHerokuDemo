@@ -61,7 +61,7 @@
                   <limit>
                     <counter>LINE</counter>
                     <value>COVEREDRATIO</value>
-                    <minimum>0.50</minimum>
+                    <minimum>0.25</minimum>
                   </limit>
             </limits>
           </rule>
@@ -91,10 +91,10 @@
           </goals>
           <configuration>
             <check>
-              <instructionRatio>100</instructionRatio>
+              <instructionRatio>10</instructionRatio>
               <branchRatio>95</branchRatio>
-              <lineRatio>90</lineRatio>
-              <methodRatio>90</methodRatio>
+              <lineRatio>10</lineRatio>
+              <methodRatio>10</methodRatio>
               <classRatio>90</classRatio>
             </check>
           </configuration>
